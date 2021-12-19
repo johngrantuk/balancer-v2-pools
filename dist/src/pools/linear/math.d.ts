@@ -1,0 +1,20 @@
+import BigNumber from "../../utils/big-number";
+declare type Params = {
+    fee: BigNumber;
+    lowerTarget: BigNumber;
+    upperTarget: BigNumber;
+};
+export declare const _calcBptOutPerMainIn: (mainIn: BigNumber, mainBalance: BigNumber, wrappedBalance: BigNumber, bptSupply: BigNumber, params: Params) => BigNumber;
+export declare const _calcBptInPerMainOut: (mainOut: BigNumber, mainBalance: BigNumber, wrappedBalance: BigNumber, bptSupply: BigNumber, params: Params) => BigNumber;
+export declare const _calcWrappedOutPerMainIn: (mainIn: BigNumber, mainBalance: BigNumber, params: Params) => BigNumber;
+export declare const _calcWrappedInPerMainOut: (mainOut: BigNumber, mainBalance: BigNumber, params: Params) => BigNumber;
+export declare const _calcMainInPerBptOut: (bptOut: BigNumber, mainBalance: BigNumber, wrappedBalance: BigNumber, bptSupply: BigNumber, params: Params) => BigNumber;
+export declare const _calcMainOutPerBptIn: (bptIn: BigNumber, mainBalance: BigNumber, wrappedBalance: BigNumber, bptSupply: BigNumber, params: Params) => BigNumber;
+export declare const _calcMainOutPerWrappedIn: (wrappedIn: BigNumber, mainBalance: BigNumber, params: Params) => BigNumber;
+export declare const _calcMainInPerWrappedOut: (wrappedOut: BigNumber, mainBalance: BigNumber, params: Params) => BigNumber;
+export declare const _calcBptOutPerWrappedIn: (wrappedIn: BigNumber, mainBalance: BigNumber, wrappedBalance: BigNumber, bptSupply: BigNumber, params: Params) => BigNumber;
+export declare const _calcBptInPerWrappedOut: (wrappedOut: BigNumber, mainBalance: BigNumber, wrappedBalance: BigNumber, bptSupply: BigNumber, params: Params) => BigNumber;
+export declare const _calcWrappedInPerBptOut: (bptOut: BigNumber, mainBalance: BigNumber, wrappedBalance: BigNumber, bptSupply: BigNumber, params: Params) => BigNumber;
+export declare const _calcWrappedOutPerBptIn: (bptIn: BigNumber, mainBalance: BigNumber, wrappedBalance: BigNumber, bptSupply: BigNumber, params: Params) => BigNumber;
+export declare const _calcTokensOutGivenExactBptIn: (balances: BigNumber[], bptAmountIn: BigNumber, bptTotalSupply: BigNumber, bptIndex: number) => BigNumber[];
+export {};
